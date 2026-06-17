@@ -2,5 +2,6 @@
   "name": "roboflow-proxy",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Tiny Vercel serverless proxy to avoid CORS issues calling Roboflow workflow inference from a static site."
 }
