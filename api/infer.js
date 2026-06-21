@@ -11,10 +11,9 @@
 const ROBOFLOW_URL = "https://detect.roboflow.com/infer/workflows/deimax-s-workspace/find-tree-rock-and-more";
 
 export default async function handler(req, res) {
-  // CORS: allow your GitHub Pages origin to call this function.
-  // Replace the value below with your actual Pages origin for tighter security,
-  // e.g. "https://deimaxlt.github.io" instead of "*".
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  // CORS: only allow your actual GitHub Pages origin to call this function,
+  // rather than the wildcard "*" used during initial setup/debugging.
+  res.setHeader("Access-Control-Allow-Origin", "https://deimaxlt.github.io");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
